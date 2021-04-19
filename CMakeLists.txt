@@ -7,5 +7,5 @@ cmake_minimum_required(VERSION 2.6)
 project (example)
 
 # Add an executable
-add_executable(example test.cpp)
-# Or add_executable(${PROJECT_NAME} test.cpp)
+add_executable(example test.c)
+# Or add_executable(${PROJECT_NAME} test.c)
