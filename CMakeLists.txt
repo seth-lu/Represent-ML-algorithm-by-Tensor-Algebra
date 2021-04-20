@@ -4,8 +4,15 @@
 cmake_minimum_required(VERSION 2.6)
 
 # Set the project name
-project (example)
+project (MLINLA LANGUAGE CXX)
 
-# Add an executable
-add_executable(example test.c)
-# Or add_executable(${PROJECT_NAME} test.c)
+# set configurations
+set(CMAKE_C_COMPILER $(C_COMPILER))
+set(CMAKE_CXX_COMPILER $(CXX_COMPILER))
+set(CMAKE_CXX_FLAG "--std=c++11 -O0 -g") #debug
+
+# add subdirectory
+add_subdirectory(ml_tf)
+add_subdirectory(ml_cafe)
+add_subdirectory(itensor)
+add_subdirectory(benchmarks)
