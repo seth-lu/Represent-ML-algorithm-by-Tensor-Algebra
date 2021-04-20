@@ -1,7 +1,7 @@
 TODO lists for everyone
 --------------------------
 Shuai: 
-1. fix CMake for /ml_org/ using C++ libraries like Tensorflow
+1. fix CMake for /ml_tf/ using C++ Tensorflow
 2. add code for cnn and resnet 
 3. make sure the code runs correctly
 4. put data set to /data/
@@ -14,4 +14,8 @@ Hao:
 
 --------------------------
 Xin:
+1. fix CMake for /ml_cafe/
+2. add code for cnn and resnet using Caffe C++
+3. make sure the code runs correctly
+4. put data set to /data/
 
