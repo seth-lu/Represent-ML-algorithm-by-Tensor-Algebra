@@ -6,11 +6,16 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DNDEBUG")
 
 find_package(TensorFlow REQUIRED)
 
-include_directories($ENV{TENSORFLOW_BUILD_DIR}/includes/) # add header directories here
+include_directories(/usr/local/include) # add header directories here
 
-link_directories("XXXX") # add lib directories here
+link_directories(/usr/local/lib) # add lib directories here
 
-link_libraries("-litensor") # add lib flag here
+link_libraries(/usr/local/lib/libtensorflow.so) # add lib flag here
+link_libraries(/usr/local/lib/libtensorflow.so2)
+link_libraries(/usr/local/lib/libtensorflow.so.2.4.0)
+link_libraries(/usr/local/lib/libtensorflow_framework.so)
+link_libraries(/usr/local/lib/libtensorflow_framework.so2)
+link_libraries(/usr/local/lib/libtensorflow_framework.so.2.4.0)
 
 #add subdirectory
 add_subdirectory(networks)
