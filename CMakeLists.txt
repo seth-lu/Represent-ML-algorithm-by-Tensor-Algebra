@@ -15,4 +15,5 @@ set(CMAKE_CXX_FLAG "--std=c++11 -O0 -g") #debug
 add_subdirectory(ml_tf)
 add_subdirectory(ml_cafe)
 add_subdirectory(itensor)
+add_subdirectory(operations)
 add_subdirectory(benchmarks)
