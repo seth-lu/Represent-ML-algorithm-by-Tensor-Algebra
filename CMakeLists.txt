@@ -1,5 +1,3 @@
-# This is a example.
-
 # Set the minimum version of CMake that can be used
 cmake_minimum_required(VERSION 2.6)
 
