@@ -1,0 +1,3 @@
+/home/ps/th/py/elem/add/build/CMakeFiles/rebuild_cache.dir
+/home/ps/th/py/elem/add/build/CMakeFiles/edit_cache.dir
+/home/ps/th/py/elem/add/build/CMakeFiles/add.dir

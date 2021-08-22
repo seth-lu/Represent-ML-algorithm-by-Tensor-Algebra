@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.0 FATAL_ERROR)
+project(add)
+option(ABFT "use ABFT" ON)
+if(ABFT)
+add_definitions(-DABFT)
+endif()
+find_package(Torch REQUIRED)
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
+
+add_executable(add add.cpp)
+target_link_libraries(add "${TORCH_LIBRARIES}")
+#set_property(TARGET add PROPERTY CXX_STANDARD 14)
